@@ -18,10 +18,7 @@ This tool is used to perform DNS spoofing attacks on target systems
 
     scapy module
     netfilterqueue module
+    subprocess module
     
 
 *This is supported only on **UNIX** environment, but can be targetted against **any** domain*
-
-**To allow the victim to access the internet, use the command below before ruuning this tool:**
-
-    echo 1 > /proc/sys/net/ipv4/ip_forward
