@@ -10,8 +10,9 @@ This tool is used to perform DNS spoofing attacks on target systems
 
     1. Clone this repository
     2. Run dns_spoof.py
-    3. Use ping to spoof the target
-    4. Remember to flush the iptables and close apache2 server when finished
+    3. Set the target IP and domain
+    
+**To spoof a remote system, use the <a href="https://github.com/vinsdragonis/ARP-Spoofer">ARP Spoofer</a> tool with the target system's IP**
 
 **Dependencies:**
 
