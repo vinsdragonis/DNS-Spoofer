@@ -18,6 +18,9 @@ This tool is used to perform DNS spoofing attacks on target systems
     scapy module
     netfilterqueue module
     subprocess module
+    os module
+    stat module
+    argparse module
     
 
 *This is supported only on **UNIX** environment, but can be targetted against **any** domain*
