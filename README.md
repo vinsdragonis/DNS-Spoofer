@@ -9,10 +9,9 @@ This tool is used to perform DNS spoofing attacks on target systems
 **To use this:**
 
     1. Clone this repository
-    2. Run netowrk_scanner.py
-    3. Run dns_spoof.py
-    4. Use ping to spoof the target
-    5. Remember to flush the iptables and close apache2 server when finished
+    2. Run dns_spoof.py
+    3. Use ping to spoof the target
+    4. Remember to flush the iptables and close apache2 server when finished
 
 **Dependencies:**
 
